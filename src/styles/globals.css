@@ -49,6 +49,8 @@
     --colors-warning-900: 51 34 0;
 
     --colors-neutral-0: 255 255 255; /* rgba(255, 255, 255, 1) */
+    --colors-neutral-3: 250 250 251; /* rgba(255, 255, 255, .97 )*/
+    --colors-neutral-5: 246 247 248; /* rgba(255, 255, 255, .95) */
     --colors-neutral-10: 242 244 247; /* rgba(255, 255, 255, 0.9) */
     --colors-neutral-20: 217 221 227; /* rgba(255, 255, 255, 0.8) */
     --colors-neutral-30: 178 184 194; /* rgba(255, 255, 255, 0.7) */

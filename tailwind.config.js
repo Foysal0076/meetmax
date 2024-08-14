@@ -147,6 +147,8 @@ module.exports = {
         },
         neutral: {
           0: 'rgb(var(--colors-neutral-0) / <alpha-value>)',
+          3: 'rgb(var(--colors-neutral-3) / <alpha-value>)',
+          5: 'rgb(var(--colors-neutral-5) / <alpha-value>)',
           10: 'rgb(var(--colors-neutral-10) / <alpha-value>)',
           20: 'rgb(var(--colors-neutral-20) / <alpha-value>)',
           30: 'rgb(var(--colors-neutral-30) / <alpha-value>)',
@@ -191,6 +193,9 @@ module.exports = {
         square: 'square',
         roman: 'upper-roman',
         alpha: 'lower-alpha',
+      },
+      boxShadow: {
+        'default': '0px 6px 20px 0px rgba(0, 0, 0, 0.04);'
       },
     },
   },
