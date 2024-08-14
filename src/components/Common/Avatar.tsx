@@ -31,11 +31,12 @@ const Avatar = ({ className = '', fullname = '', avatarUrl = '' }: Props) => {
   }
 
   return (
-    <div className={`${className} relative bg-neutral-30 dark:bg-neutral-500`}>
+    <div className={`${className} relative`}>
       <Image
         src={avatarUrl}
         alt={fullname ?? 'avatar'}
         className={`object-cover`}
+        fill
       />
     </div>
   )

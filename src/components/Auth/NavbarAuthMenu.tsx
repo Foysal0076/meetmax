@@ -17,17 +17,17 @@ const NavbarAuthMenu = () => {
   return (
     <>
       {isLogged ? (
-        <div className='flex gap-2'>
-          <Avatar fullname={user?.name ?? ''} />
-          <button onClick={handleLogout} className=''>
-            Logout
-          </button>
+        <div className='flex items-center gap-5'>
+          <p className='hidden text-display font-medium md:block'>
+            {user?.name}
+          </p>
+          <Avatar
+            className='h-[2.625rem] w-[2.625rem] rounded-2xl'
+            fullname={user?.name ?? ''}
+            avatarUrl='/assets/images/dummy/avatar4.png'
+          />
         </div>
-      ) : (
-        <a href='/auth/login' className=''>
-          Login
-        </a>
-      )}
+      ) : null}
     </>
   )
 }

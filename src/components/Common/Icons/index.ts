@@ -1,2 +1,5 @@
+export { MeetmaxIcon } from './MeetmaxIcon'
+export { MessageIcon } from './MessageIcon'
+export { SearchIcon } from './SearchIcon'
 export { ToggleDarkIcon } from './ToggleDarkIcon'
 export { ToggleLightIcon } from './ToggleLightIcon'
