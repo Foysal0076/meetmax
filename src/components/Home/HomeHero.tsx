@@ -93,8 +93,8 @@ export const HomeHero = () => {
           </ul>
           <div className='mt-8' />
           <hr className='border-slate-900/10 dark:border-slate-300/10' />
-          <div className='mt-4 h-32 w-32 rounded-lg border border-slate-900/10 bg-surface-100/50 shadow-md dark:border-slate-300/10'></div>
-          <div className='mt-4 h-32 w-32 rounded-lg border border-slate-900/10 bg-surface-100/50 shadow-md dark:border-slate-300/10'></div>
+          <div className='bg-surface-100/50 mt-4 h-32 w-32 rounded-lg border shadow-md dark:border-slate-300/10'></div>
+          <div className='bg-surface-100/50 mt-4 h-32 w-32 rounded-lg border shadow-md dark:border-slate-300/10'></div>
           <div className='flex flex-wrap gap-4 bg-primary-400'>
             <div className='mt-4 h-32 w-32 rounded-lg bg-primary-50'></div>
             <div className='mt-4 h-32 w-32 rounded-lg bg-primary-100'></div>

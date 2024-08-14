@@ -38,53 +38,60 @@ module.exports = {
         'right-8': 'right 2rem center',
       },
       fontSize: {
-        xxs: [
-          '0.625rem',
-          {
-            lineHeight: '1.125rem',
-          },
-        ],
-
-        'display-xs': [
-          '1.5rem',
-          {
-            lineHeight: '2rem',
-          },
-        ],
-
-        'display-sm': [
+        'heading-1': [
           '1.875rem',
           {
-            lineHeight: '2.375rem',
+            lineHeight: '2.875rem',
+            fontWeight: 900,
           },
         ],
-
-        'display-md': [
-          '2rem',
+        'heading-2': [
+          '1.625rem',
           {
-            lineHeight: '2.75rem',
-            letterSpacing: '-0.045rem',
+            lineHeight: '2.5rem',
+            fontWeight: 700,
           },
         ],
-        'display-lg': [
-          '3rem',
+        'heading-3': [
+          '1.125rem',
           {
-            lineHeight: '3.75rem',
-            letterSpacing: '-0.06rem',
+            lineHeight: '1.75rem',
+            fontWeight: 700,
           },
         ],
-        'display-xl': [
-          '3.75rem',
+        'display': [
+          '1rem',
           {
-            lineHeight: '4.5rem',
-            letterSpacing: '-0.075rem',
+            lineHeight: '1.5rem',
+            fontWeight: 400,
           },
         ],
-        'display-2xl': [
-          '4.5rem',
+        'body-1': [
+          '.875rem',
           {
-            lineHeight: '5.625rem',
-            letterSpacing: '-0.09rem',
+            lineHeight: '1.375rem',
+            fontWeight: 400,
+          },
+        ],
+        'body-2': [
+          '.8125rem',
+          {
+            lineHeight: '1.125rem',
+            fontWeight: 400,
+          },
+        ],
+        'body-3': [
+          '.75rem',
+          {
+            lineHeight: '1.125rem',
+            fontWeight: 400,
+          },
+        ],
+        'body-3': [
+          '.625rem',
+          {
+            lineHeight: '1rem',
+            fontWeight: 400,
           },
         ],
       },
@@ -160,41 +167,9 @@ module.exports = {
           800: 'rgb(var(--colors-neutral-800) / <alpha-value>)',
           900: 'rgb(var(--colors-neutral-900) / <alpha-value>)',
         },
-        surface: {
-          0: 'rgb(var(--colors-surface-0) / <alpha-value>)',
-          50: 'rgb(var(--colors-surface-50) / <alpha-value>)',
-          100: 'rgb(var(--colors-surface-100) / <alpha-value>)',
-          200: 'rgb(var(--colors-surface-200) / <alpha-value>)',
-          300: 'rgb(var(--colors-surface-300) / <alpha-value>)',
-          400: 'rgb(var(--colors-surface-400) / <alpha-value>)',
-          500: 'rgb(var(--colors-surface-500) / <alpha-value>)',
-          600: 'rgb(var(--colors-surface-600) / <alpha-value>)',
-          700: 'rgb(var(--colors-surface-700) / <alpha-value>)',
-          800: 'rgb(var(--colors-surface-800) / <alpha-value>)',
-          900: 'rgb(var(--colors-surface-900) / <alpha-value>)',
-          950: 'rgb(var(--colors-surface-950) / <alpha-value>)',
-        },
       },
       borderColor: {
-        // DEFAULT: 'var(--colors-neutral-50)', // this does not work
-        DEFAULT: '#e5e7eb',
-      },
-      boxShadow: {
-        xs: 'var(--box-shadow-xs)',
-        sm: 'var(--box-shadow-sm)',
-        md: 'var(--box-shadow-md)',
-        lg: 'var(--box-shadow-lg)',
-        xl: 'var(--box-shadow-xl)',
-        '2xl': 'var(--box-shadow-2-xl)',
-        '3xl': 'var(--box-shadow-3-xl)',
-        'top': 'var(--box-shadow-top)',
-        'bottom': 'var(--box-shadow-bottom)',
-      },
-      blur: {
-        sm: 'var(--backgroundblur-sm-backdrop-filter)',
-        md: 'var(--backgroundblur-md-backdrop-filter)',
-        lg: 'var(--backgroundblur-lg-backdrop-filter)',
-        xl: 'var(--backgroundblur-xl-backdrop-filter)',
+        DEFAULT: 'rgb(var(--colors-neutral-20) / <alpha-value>)',
       },
       backgroundImage: {
         'chevron-down': 'url(/assets/images/icons/chevron-down.svg)',
