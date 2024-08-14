@@ -197,6 +197,9 @@ module.exports = {
       boxShadow: {
         'default': '0px 6px 20px 0px rgba(0, 0, 0, 0.04);'
       },
+      borderRadius: {
+        large: '.625rem'
+      }
     },
   },
   plugins: [

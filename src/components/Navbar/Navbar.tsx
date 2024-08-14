@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 import NavbarAuthMenu from '@/components/Auth/NavbarAuthMenu'
+import CompanyLogo from '@/components/Common/CompanyLogo'
 import ThemeSwitcher from '@/components/Common/ThemeSwitcher'
 import { NavigationDrawerMenu } from '@/components/Navbar/NavigationDrawer'
 
@@ -14,7 +15,7 @@ export const Navbar = () => {
         aria-label='Main navigation'>
         <div className='tracking-tighter'>
           <Link href='/' className='h5 font-extrabold text-primary-400'>
-            Home
+            <CompanyLogo />
           </Link>
         </div>
         <div className='flex gap-4'>

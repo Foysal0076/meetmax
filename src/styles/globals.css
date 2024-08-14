@@ -82,7 +82,7 @@
   }
 
   body {
-    @apply text-neutral-100 dark:text-neutral-20;
+    @apply tracking-normal text-neutral-100 dark:text-neutral-20;
   }
 
   h1,
@@ -95,7 +95,7 @@
   }
   p,
   span {
-    @apply text-neutral-100 dark:text-neutral-20;
+    @apply tracking-normal text-neutral-100 dark:text-neutral-20;
   }
 }
 
