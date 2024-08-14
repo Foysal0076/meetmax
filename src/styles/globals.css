@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --colors-primary-50: 245 249 255;
+    --colors-primary-100: 239 244 255;
+    --colors-primary-200: 214 229 255;
+    --colors-primary-300: 178 205 255;
+    --colors-primary-400: 127 172 255;
+    --colors-primary-500: 55 125 255;
+    --colors-primary-600: 44 100 204;
+    --colors-primary-700: 33 75 153;
+    --colors-primary-800: 22 50 102;
+    --colors-primary-900: 11 25 51;
+
+    --colors-secondary-50: 245 252 249;
+    --colors-secondary-100: 215 245 231;
+    --colors-secondary-200: 175 234 208;
+    --colors-secondary-300: 136 224 184;
+    --colors-secondary-400: 96 213 161;
+    --colors-secondary-500: 56 203 137;
+    --colors-secondary-600: 45 162 110;
+    --colors-secondary-700: 34 122 82;
+    --colors-secondary-800: 22 81 55;
+    --colors-secondary-900: 11 41 27;
+
+    --colors-danger-50: 255 247 245;
+    --colors-danger-100: 255 221 214;
+    --colors-danger-200: 255 187 172;
+    --colors-danger-300: 255 154 131;
+    --colors-danger-400: 255 120 89;
+    --colors-danger-500: 255 86 48;
+    --colors-danger-600: 204 69 38;
+    --colors-danger-700: 153 52 29;
+    --colors-danger-800: 102 34 19;
+    --colors-danger-900: 51 17 10;
+
+    --colors-warning-50: 255 251 242;
+    --colors-warning-100: 255 238 204;
+    --colors-warning-200: 255 221 153;
+    --colors-warning-300: 255 205 102;
+    --colors-warning-400: 255 188 51;
+    --colors-warning-500: 255 171 0;
+    --colors-warning-600: 204 137 0;
+    --colors-warning-700: 153 103 0;
+    --colors-warning-800: 102 68 0;
+    --colors-warning-900: 51 34 0;
+
+    --colors-neutral-0: 255 255 255; /* rgba(255, 255, 255, 1) */
+    --colors-neutral-10: 242 244 247; /* rgba(255, 255, 255, 0.9) */
+    --colors-neutral-20: 217 221 227; /* rgba(255, 255, 255, 0.8) */
+    --colors-neutral-30: 178 184 194; /* rgba(255, 255, 255, 0.7) */
+    --colors-neutral-40: 138 145 158; /* rgba(255, 255, 255, 0.6) */
+    --colors-neutral-50: 98 106 122; /* rgba(255, 255, 255, 0.5) */
+    --colors-neutral-60: 84 99 126; /* rgba(255, 255, 255, 0.4) */
+    --colors-neutral-70: 82 97 124; /* rgba(255, 255, 255, 0.3) */
+    --colors-neutral-80: 81 96 123; /* rgba(255, 255, 255, 0.2) */
+    --colors-neutral-90: 79 94 121; /* rgba(255, 255, 255, 0.1) */
+    --colors-neutral-95: 78 93 120; /* rgba(255, 255, 255, 0.05) */
+    --colors-neutral-100: 78 93 120;
+    --colors-neutral-200: 70 83 108; /* rgba(0, 0, 0, 0.1) */
+    --colors-neutral-300: 62 74 96; /* rgba(0, 0, 0, 0.2) */
+    --colors-neutral-400: 54 65 84; /* rgba(0, 0, 0, 0.3) */
+    --colors-neutral-500: 47 56 72; /* rgba(0, 0, 0, 0.4) */
+    --colors-neutral-600: 39 47 60; /* rgba(0, 0, 0, 0.5) */
+    --colors-neutral-700: 31 37 48; /* rgba(0, 0, 0, 0.6) */
+    --colors-neutral-800: 23 28 36; /* rgba(0, 0, 0, 0.7) */
+    --colors-neutral-900: 16 19 24; /* rgba(0, 0, 0, 0.8) */
+  }
+
+  * {
+    @apply m-0 box-border p-0 font-Roboto antialiased;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply text-neutral-100 dark:text-neutral-20;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-neutral-100 dark:text-neutral-10;
+  }
+  p,
+  span {
+    @apply text-neutral-100 dark:text-neutral-20;
+  }
+}
+
+@layer components {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .h1 {
+    @apply text-[1.125rem] font-bold leading-[1.75rem] md:text-[1.875rem] md:font-black md:leading-[2.875rem];
+  }
+
+  .h2 {
+    @apply text-base font-bold md:text-[1.625rem] md:leading-[2.5rem];
+  }
+
+  .h3 {
+    @apply text-base font-bold md:text-[1.125rem] md:font-bold md:leading-[1.75rem];
+  }
+}
