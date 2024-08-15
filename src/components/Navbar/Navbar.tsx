@@ -8,7 +8,7 @@ import NavbarMessageMenu from '@/components/Navbar/NavbarMessageMenu'
 export const Navbar = () => {
   return (
     <header
-      className='fixed top-0 z-40 flex h-[3.75rem] w-full items-center bg-neutral-0 backdrop-blur-3xl dark:bg-neutral-800/80 md:h-[4.5rem]'
+      className='fixed top-0 z-40 flex h-[3.875rem] w-full items-center bg-neutral-0 backdrop-blur-3xl dark:bg-neutral-800/80 md:h-[4.875rem]'
       aria-label='Main navigation'>
       <nav
         className='flex w-full items-center gap-5 px-4 md:px-8'

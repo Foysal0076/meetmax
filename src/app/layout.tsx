@@ -5,8 +5,8 @@ import { Roboto } from 'next/font/google'
 
 import { AuthProvider } from '@/auth/AuthProvider'
 import FavIconTags from '@/components/Common/FavIconTags'
+import MainLayout from '@/components/Common/MainLayout'
 import NextThemeProvider from '@/components/Common/NextThemeProvider'
-import { Footer } from '@/components/Footer'
 import { Navbar } from '@/components/Navbar'
 import { PROJECT_INFORMATION } from '@/lib/constants'
 
@@ -33,12 +33,11 @@ export default function RootLayout({
       <body>
         <AuthProvider>
           <NextThemeProvider>
-            <div className='flex min-h-screen flex-col justify-between pt-[3.75rem] md:pt-[4.5rem]'>
-              <div>
-                <Navbar />
+            <div className='flex min-h-screen flex-col pt-[3.875rem] md:pt-[4.875rem]'>
+              <Navbar />
+              <MainLayout>
                 <main>{children}</main>
-              </div>
-              <Footer />
+              </MainLayout>
             </div>
           </NextThemeProvider>
         </AuthProvider>

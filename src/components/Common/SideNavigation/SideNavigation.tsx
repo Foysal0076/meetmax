@@ -11,7 +11,7 @@ export const SideNavigation = () => {
     signOut()
   }
   const path = usePathname()
-  console.log(path)
+
   return (
     <div className='flex flex-col gap-2.5'>
       {SIDE_NAV_ITEMS.map((item) => (
