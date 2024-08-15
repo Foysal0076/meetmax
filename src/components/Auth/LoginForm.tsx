@@ -11,14 +11,14 @@ const LoginForm = () => {
       email,
       password,
       redirect: true,
-      callbackUrl: '/dashboard',
+      callbackUrl: '/',
     })
   }
 
   return (
     <div className='flex h-[80vh] items-center justify-center'>
       <form
-        className='w-full rounded-lg border bg-surface-0 p-4 shadow-sm dark:bg-surface-100 md:max-w-96 md:p-8'
+        className='bg-surface-0 dark:bg-surface-100 w-full rounded-lg border p-4 shadow-sm md:max-w-96 md:p-8'
         onSubmit={handleSubmit}>
         <h2 className='mb-4 text-2xl font-bold'>Login</h2>
         <div className='mb-4'>
@@ -28,7 +28,7 @@ const LoginForm = () => {
           <input
             type='email'
             id='email'
-            className='w-full rounded border border-neutral-300 bg-surface-50 px-3 py-2 focus:border-primary-500 focus:outline-none dark:bg-surface-200'
+            className='bg-surface-50 dark:bg-surface-200 w-full rounded border border-neutral-300 px-3 py-2 focus:border-primary-500 focus:outline-none'
             placeholder='Enter your email'
             defaultValue='test@foy.com'
           />
@@ -40,7 +40,7 @@ const LoginForm = () => {
           <input
             type='password'
             id='password'
-            className='w-full rounded border border-neutral-300 bg-surface-50 px-3 py-2 focus:border-primary-500 focus:outline-none dark:bg-surface-200'
+            className='bg-surface-50 dark:bg-surface-200 w-full rounded border border-neutral-300 px-3 py-2 focus:border-primary-500 focus:outline-none'
             placeholder='Enter your password'
           />
         </div>

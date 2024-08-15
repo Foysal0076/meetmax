@@ -1,11 +1,13 @@
 'use client'
 
+import { SideNavigation } from '@/components/Common/SideNavigation'
+
 export const Home = () => {
   return (
     <div className='flex overflow-x-hidden'>
       {/* side navigation */}
-      <div className='-ml-[15rem] w-[15rem] bg-secondary-500 transition-all duration-300 md:ml-0'>
-        Side navigation
+      <div className='-ml-[15rem] w-[15rem] px-3 transition-all duration-300 md:ml-0 lg:min-w-[15rem] lg:px-5'>
+        <SideNavigation />
       </div>
       <div className='container h-[100vh] max-w-4xl rounded-tl-2xl rounded-tr-2xl bg-neutral-3 pt-[1.875rem] max-sm:px-0'>
         <div className='flex gap-[1.875rem]'>
