@@ -6,9 +6,9 @@ import LoginForm from '@/components/Auth/LoginForm'
 
 const LoginPage = async () => {
   const session = await getServerSession(authOptions)
-  // console.log(session)
+  console.log('Login Page:', session)
   if (session && session.accessToken) {
-    return redirect('/dashboard')
+    return redirect('/')
   }
 
   return (
