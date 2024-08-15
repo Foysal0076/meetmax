@@ -4,6 +4,7 @@ import '@/styles/globals.scss'
 import { Roboto } from 'next/font/google'
 
 import { AuthProvider } from '@/auth/AuthProvider'
+import FavIconTags from '@/components/Common/FavIconTags'
 import NextThemeProvider from '@/components/Common/NextThemeProvider'
 import { Footer } from '@/components/Footer'
 import { Navbar } from '@/components/Navbar'
@@ -28,12 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' suppressHydrationWarning className={`${roboto.variable}`}>
-      <link
-        rel='icon'
-        type='image/ico'
-        sizes='32x32'
-        href='/assets/favicons/favicon.ico'
-      />
+      <FavIconTags />
       <body>
         <AuthProvider>
           <NextThemeProvider>
