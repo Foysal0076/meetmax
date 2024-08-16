@@ -11,9 +11,11 @@ const Avatar = ({ className = '', fullname = '', avatarUrl = '' }: Props) => {
   const initials = avatarUrl ? '' : createInitials(fullname)
 
   //check if the className has round class if not add it
-  className = className.includes('rounded-')
-    ? className
-    : `${className} rounded-full`
+  const roundedClassRegex = /rounded-[a-zA-Z0-9]+/g
+  const roundedClassMatch = className.match(roundedClassRegex)
+  const rounded = roundedClassMatch ? roundedClassMatch[0] : 'rounded-full'
+
+  className = roundedClassMatch ? className : `${className} ${rounded}`
 
   //check if the className has h- w- class if not add it,  if both are present do nothing
   className =
@@ -35,7 +37,7 @@ const Avatar = ({ className = '', fullname = '', avatarUrl = '' }: Props) => {
       <Image
         src={avatarUrl}
         alt={fullname ?? 'avatar'}
-        className={`object-cover`}
+        className={`${rounded} object-cover`}
         fill
       />
     </div>

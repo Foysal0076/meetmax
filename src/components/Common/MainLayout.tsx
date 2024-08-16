@@ -1,3 +1,4 @@
+import { Chat } from '@/components/Chat'
 import { SideNavigation } from '@/components/Common/SideNavigation'
 
 type Props = {
@@ -15,8 +16,10 @@ const MainLayout = ({ children }: Props) => {
       <div className='container max-w-4xl rounded-tl-2xl rounded-tr-2xl bg-neutral-3 pt-[1.875rem] max-md:overflow-hidden max-sm:px-0'>
         {children}
       </div>
-      <div className='invisible w-0 bg-danger-500 opacity-0 transition-all duration-300 md:visible md:w-[19.375rem] md:opacity-100'>
-        <div className='sticky top-[4.875rem] w-full'>Chats</div>
+      <div className='invisible w-0 opacity-0 shadow-default transition-all duration-300 md:visible md:w-[12rem] md:opacity-100 lg:w-[19.375rem]'>
+        <div className='sticky top-[4.875rem] w-full'>
+          <Chat />
+        </div>
       </div>
     </div>
   )

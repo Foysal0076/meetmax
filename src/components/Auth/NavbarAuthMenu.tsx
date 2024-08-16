@@ -24,7 +24,7 @@ const NavbarAuthMenu = () => {
           <Avatar
             className='h-[2.625rem] w-[2.625rem] rounded-2xl'
             fullname={user?.name ?? ''}
-            avatarUrl='/assets/images/dummy/avatar4.png'
+            avatarUrl='/assets/images/dummy/avatar-dp.png'
           />
         </div>
       ) : null}

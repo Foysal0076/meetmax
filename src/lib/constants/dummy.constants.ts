@@ -438,3 +438,123 @@ export const EVENTS: Event[] = [
     participants: [],
   },
 ]
+
+export type Story = {
+  id: number
+  content: string
+  author: {
+    id: number
+    fullname: string
+    avatarUrl: string
+  }
+  date: Date
+}
+
+export const STORIES: Story[] = [
+  {
+    id: 1,
+    content:
+      'Today was a great day! I went to the park and enjoyed the sunshine.',
+    author: {
+      id: 1,
+      fullname: 'John Doe',
+      avatarUrl: '/assets/images/dummy/avatar1.png',
+    },
+    date: new Date('2023-10-01'),
+  },
+  {
+    id: 2,
+    content:
+      'I just tried a new recipe for chocolate cake and it was delicious!',
+    author: {
+      id: 2,
+      fullname: 'Jane Smith',
+      avatarUrl: '/assets/images/dummy/avatar2.png',
+    },
+    date: new Date('2023-10-02'),
+  },
+  {
+    id: 3,
+    content: 'Visited the mountains last weekend. The view was breathtaking!',
+    author: {
+      id: 3,
+      fullname: 'Alice Johnson',
+      avatarUrl: '/assets/images/dummy/avatar3.png',
+    },
+    date: new Date('2023-10-03'),
+  },
+  {
+    id: 4,
+    content:
+      'Attended a tech conference today. Learned a lot about AI and machine learning.',
+    author: {
+      id: 4,
+      fullname: 'Bob Brown',
+      avatarUrl: '/assets/images/dummy/avatar4.png',
+    },
+    date: new Date('2023-10-04'),
+  },
+  {
+    id: 5,
+    content:
+      'Started a new workout routine this week. Feeling more energetic already!',
+    author: {
+      id: 5,
+      fullname: 'Charlie Davis',
+      avatarUrl: '/assets/images/dummy/avatar5.png',
+    },
+    date: new Date('2023-10-05'),
+  },
+  {
+    id: 6,
+    content: "Just finished reading 'The Great Gatsby'. Highly recommend it!",
+    author: {
+      id: 1,
+      fullname: 'John Doe',
+      avatarUrl: '/assets/images/dummy/avatar1.png',
+    },
+    date: new Date('2023-10-06'),
+  },
+  {
+    id: 7,
+    content: 'Visited an art exhibition today. The paintings were amazing!',
+    author: {
+      id: 2,
+      fullname: 'Jane Smith',
+      avatarUrl: '/assets/images/dummy/avatar2.png',
+    },
+    date: new Date('2023-10-07'),
+  },
+  {
+    id: 8,
+    content: 'Went to a music festival last night. The bands were fantastic!',
+    author: {
+      id: 3,
+      fullname: 'Alice Johnson',
+      avatarUrl: '/assets/images/dummy/avatar3.png',
+    },
+    date: new Date('2023-10-08'),
+  },
+  {
+    id: 9,
+    content:
+      "Learned some new cooking tips from a friend. Can't wait to try them out!",
+    author: {
+      id: 4,
+      fullname: 'Bob Brown',
+      avatarUrl: '/assets/images/dummy/avatar4.png',
+    },
+    date: new Date('2023-10-09'),
+  },
+  {
+    id: 10,
+    content:
+      'Spent the day gardening. My plants are looking healthier than ever!',
+    author: {
+      id: 5,
+      fullname: 'Charlie Davis',
+      avatarUrl: '/assets/images/dummy/avatar5.png',
+    },
+    date: new Date('2023-10-10'),
+  },
+]
