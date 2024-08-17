@@ -1,6 +1,6 @@
 'use client'
 
-import YouMightLikeProfile from '@/components/Common/YouMightLikeProfile'
+import FeedSideContent from '@/components/Home/FeedSideContent'
 
 export const Home = () => {
   return (
@@ -22,7 +22,7 @@ export const Home = () => {
       </div>
       <div className='hidden min-w-fit basis-0 xl:block xl:min-w-[18rem] xl:basis-4/12'>
         <div className='sticky top-[6.75rem]'>
-          <YouMightLikeProfile />
+          <FeedSideContent />
         </div>
       </div>
     </div>

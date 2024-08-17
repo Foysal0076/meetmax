@@ -43,17 +43,20 @@ export type PostCommentAuthor = {
   avatarUrl: string
 }
 
+export type ShortUserInfo = {
+  id: number
+  fullname: string
+  avatarUrl?: string
+}
+
 export type Event = {
   id: number
   icon: string
   title: string
   description: string
   featuredImage: string
-  participants: {
-    id: number
-    fullname: string
-    avatarUrl: string
-  }[]
+  participants: ShortUserInfo[]
+  seenBy: ShortUserInfo[]
 }
 
 export const USERS: User[] = [
@@ -843,16 +846,37 @@ export const EVENTS: Event[] = [
     description: 'Join us for the graduation ceremony of the class of 2024!',
     icon: '/assets/images/dummy/book-icon.svg',
     featuredImage: '',
-    participants: [],
+    participants: USERS.slice(0, 8).map((user) => ({
+      id: user.id,
+      fullname: user.fullname,
+      avatarUrl: user.userProfile?.avatarUrl,
+    })),
+
+    seenBy: USERS.slice(0, 13).map((user) => ({
+      id: user.id,
+      fullname: user.fullname,
+      avatarUrl: user.userProfile?.avatarUrl,
+    })),
   },
   {
-    id: 1,
+    id: 2,
     title: 'Photography Ideas',
     description:
       'Reflections. Reflections work because they can create a sense of depth and drama.',
     icon: '/assets/images/dummy/camera-icon.svg',
     featuredImage: '',
-    participants: [],
+    participants: [
+      ...USERS.slice(8, 10).map((user) => ({
+        id: user.id,
+        fullname: user.fullname,
+        avatarUrl: user.userProfile?.avatarUrl,
+      })),
+    ],
+    seenBy: USERS.slice(8, 15).map((user) => ({
+      id: user.id,
+      fullname: user.fullname,
+      avatarUrl: user.userProfile?.avatarUrl,
+    })),
   },
 ]
 
