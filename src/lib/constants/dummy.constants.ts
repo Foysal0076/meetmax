@@ -77,7 +77,7 @@ export const USERS: User[] = [
         ],
       },
     ],
-    lastSeen: new Date(), // 2 minutes ago
+    lastSeen: new Date(new Date().setMinutes(new Date().getMinutes() - 2)), // 2 minutes ago
   },
   {
     id: 2,
@@ -151,7 +151,7 @@ export const USERS: User[] = [
         ],
       },
     ],
-    lastSeen: new Date(), // 8 minutes ago
+    lastSeen: new Date(new Date().setHours(new Date().getHours() - 8)), // 8 minutes ago
   },
   {
     id: 4,
@@ -254,7 +254,7 @@ export const USERS: User[] = [
         ],
       },
     ],
-    lastSeen: new Date(), // 15 minutes ago
+    lastSeen: new Date(new Date().setMinutes(new Date().getMinutes() - 15)), // 15 minutes ago
   },
   {
     id: 8,
@@ -351,7 +351,7 @@ export const USERS: User[] = [
   },
   {
     id: 13,
-    fullname: 'Jose Antonio',
+    fullname: 'Ose Antonio',
     email: 'jose.antonio@example.com',
     userProfile: {
       gender: 'male',
@@ -375,7 +375,7 @@ export const USERS: User[] = [
   },
   {
     id: 15,
-    fullname: 'Ostoja Ostojic',
+    fullname: 'Astoja Ostojic',
     email: 'ostoja.ostojic@example.com',
     userProfile: {
       gender: 'male',

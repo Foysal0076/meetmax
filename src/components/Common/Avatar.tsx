@@ -24,9 +24,19 @@ const Avatar = ({ className = '', fullname = '', avatarUrl = '' }: Props) => {
       : `${className} h-[3.125rem] w-[3.125rem]`
 
   if (!avatarUrl) {
+    const asciiValue = initials.charCodeAt(0)
+    const colorClasses =
+      asciiValue <= 71
+        ? 'bg-primary-500/20 text-primary-500'
+        : asciiValue <= 78
+          ? 'bg-neutral-500/20 text-neutral-500'
+          : asciiValue <= 84
+            ? 'bg-secondary-500/20 text-secondary-500'
+            : 'bg-danger-500/20 text-danger-500'
+
     return (
       <div
-        className={`${className} flex items-center justify-center bg-neutral-100 text-lg font-bold dark:bg-neutral-500`}>
+        className={`${className} ${colorClasses} flex items-center justify-center text-display font-medium`}>
         {initials}
       </div>
     )
@@ -39,6 +49,7 @@ const Avatar = ({ className = '', fullname = '', avatarUrl = '' }: Props) => {
         alt={fullname ?? 'avatar'}
         className={`${rounded} object-cover`}
         fill
+        sizes='6.25rem'
       />
     </div>
   )
