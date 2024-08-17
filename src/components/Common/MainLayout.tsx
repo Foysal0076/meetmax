@@ -13,7 +13,7 @@ const MainLayout = ({ children }: Props) => {
           <SideNavigation />
         </div>
       </div>
-      <div className='container max-w-4xl rounded-tl-2xl rounded-tr-2xl bg-neutral-3 pt-[1.875rem] max-md:overflow-hidden max-sm:px-0'>
+      <div className='container max-w-4xl rounded-tl-2xl rounded-tr-2xl bg-neutral-3 max-md:overflow-hidden max-sm:px-0'>
         {children}
       </div>
       <div className='invisible w-0 opacity-0 shadow-default transition-all duration-300 md:visible md:w-[12rem] md:opacity-100 lg:w-[19.375rem]'>

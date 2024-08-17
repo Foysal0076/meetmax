@@ -96,7 +96,7 @@ const Stories = () => {
       {showRightButton && (
         <button
           onClick={handleNextButtonClick}
-          className='absolute -right-1 top-[1.0625rem] flex h-4 w-4 items-center justify-center rounded-full bg-neutral-0 shadow-default'>
+          className='absolute -right-1 top-[1.0625rem] flex h-4 w-4 items-center justify-center rounded-full bg-neutral-0 shadow-md'>
           <ArrowRightIcon width={10} />
         </button>
       )}

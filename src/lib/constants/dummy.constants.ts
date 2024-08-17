@@ -11,6 +11,15 @@ export type UserProfile = {
   gender: string
   avatarUrl: string
   dateOfBirth: Date
+  socials: Social[]
+  jobTitle: string
+  company: string
+}
+
+export type Social = {
+  name: string
+  icon: string
+  url: string
 }
 
 export type Post = {
@@ -54,8 +63,32 @@ export const USERS: User[] = [
     email: 'kayleigh.bysouth@example.com',
     userProfile: {
       gender: 'male',
+      jobTitle: 'Ui/UX Designer',
+      company: 'Technovation',
       avatarUrl: '/assets/images/dummy/avatar1.png',
       dateOfBirth: new Date('1990-05-15'),
+      socials: [
+        {
+          name: 'Portfolio',
+          icon: 'ExploreIcon',
+          url: 'https://www.google.com',
+        },
+        {
+          name: 'Facebook',
+          icon: 'FacebookIcon',
+          url: 'https://www.facebook.com',
+        },
+        {
+          name: 'Twitter',
+          icon: 'TwitterIcon',
+          url: 'https://www.twitter.com',
+        },
+        {
+          name: 'Instagram',
+          icon: 'InstagramIcon',
+          url: 'https://www.instagram.com',
+        },
+      ],
     },
     posts: [
       {
@@ -85,8 +118,32 @@ export const USERS: User[] = [
     email: 'jess.phillips@example.com',
     userProfile: {
       gender: 'male',
+      jobTitle: 'Founder and CEO',
+      company: 'Meetmax',
       avatarUrl: '/assets/images/dummy/avatar2.png',
       dateOfBirth: new Date('1985-06-10'),
+      socials: [
+        {
+          name: 'Portfolio',
+          icon: 'ExploreIcon',
+          url: 'https://www.google.com',
+        },
+        {
+          name: 'Facebook',
+          icon: 'FacebookIcon',
+          url: 'https://www.facebook.com',
+        },
+        {
+          name: 'Twitter',
+          icon: 'TwitterIcon',
+          url: 'https://www.twitter.com',
+        },
+        {
+          name: 'Instagram',
+          icon: 'InstagramIcon',
+          url: 'https://www.instagram.com',
+        },
+      ],
     },
     posts: [
       {
@@ -128,8 +185,32 @@ export const USERS: User[] = [
     email: 'eslam.hisham@example.com',
     userProfile: {
       gender: 'male',
+      jobTitle: '',
+      company: '',
       avatarUrl: '/assets/images/dummy/avatar3.png',
       dateOfBirth: new Date('1987-04-22'),
+      socials: [
+        {
+          name: 'Portfolio',
+          icon: 'ExploreIcon',
+          url: 'https://www.google.com',
+        },
+        {
+          name: 'Facebook',
+          icon: 'FacebookIcon',
+          url: 'https://www.facebook.com',
+        },
+        {
+          name: 'Twitter',
+          icon: 'TwitterIcon',
+          url: 'https://www.twitter.com',
+        },
+        {
+          name: 'Instagram',
+          icon: 'InstagramIcon',
+          url: 'https://www.instagram.com',
+        },
+      ],
     },
     posts: [
       {
@@ -159,8 +240,32 @@ export const USERS: User[] = [
     email: 'levizja.vetvendos@example.com',
     userProfile: {
       gender: 'male',
+      jobTitle: '',
+      company: '',
       avatarUrl: '/assets/images/dummy/avatar4.png',
       dateOfBirth: new Date('1983-02-14'),
+      socials: [
+        {
+          name: 'Portfolio',
+          icon: 'ExploreIcon',
+          url: 'https://www.google.com',
+        },
+        {
+          name: 'Facebook',
+          icon: 'FacebookIcon',
+          url: 'https://www.facebook.com',
+        },
+        {
+          name: 'Twitter',
+          icon: 'TwitterIcon',
+          url: 'https://www.twitter.com',
+        },
+        {
+          name: 'Instagram',
+          icon: 'InstagramIcon',
+          url: 'https://www.instagram.com',
+        },
+      ],
     },
     posts: [
       {
@@ -181,8 +286,32 @@ export const USERS: User[] = [
     email: 'afrim.konjufca@example.com',
     userProfile: {
       gender: 'male',
+      jobTitle: '',
+      company: '',
       avatarUrl: '/assets/images/dummy/avatar5.png',
       dateOfBirth: new Date('1992-09-30'),
+      socials: [
+        {
+          name: 'Portfolio',
+          icon: 'ExploreIcon',
+          url: 'https://www.google.com',
+        },
+        {
+          name: 'Facebook',
+          icon: 'FacebookIcon',
+          url: 'https://www.facebook.com',
+        },
+        {
+          name: 'Twitter',
+          icon: 'TwitterIcon',
+          url: 'https://www.twitter.com',
+        },
+        {
+          name: 'Instagram',
+          icon: 'InstagramIcon',
+          url: 'https://www.instagram.com',
+        },
+      ],
     },
     posts: [
       {
@@ -212,8 +341,32 @@ export const USERS: User[] = [
     email: 'adayin.vetvendosje@example.com',
     userProfile: {
       gender: 'male',
+      jobTitle: '',
+      company: '',
       avatarUrl: '/assets/images/dummy/avatar6.png',
       dateOfBirth: new Date('1990-03-21'),
+      socials: [
+        {
+          name: 'Portfolio',
+          icon: 'ExploreIcon',
+          url: 'https://www.google.com',
+        },
+        {
+          name: 'Facebook',
+          icon: 'FacebookIcon',
+          url: 'https://www.facebook.com',
+        },
+        {
+          name: 'Twitter',
+          icon: 'TwitterIcon',
+          url: 'https://www.twitter.com',
+        },
+        {
+          name: 'Instagram',
+          icon: 'InstagramIcon',
+          url: 'https://www.instagram.com',
+        },
+      ],
     },
     posts: [
       {
@@ -231,8 +384,32 @@ export const USERS: User[] = [
     email: 'albini.vjosa@example.com',
     userProfile: {
       gender: 'male',
+      jobTitle: '',
+      company: '',
       avatarUrl: '/assets/images/dummy/avatar7.png',
       dateOfBirth: new Date('1991-07-11'),
+      socials: [
+        {
+          name: 'Portfolio',
+          icon: 'ExploreIcon',
+          url: 'https://www.google.com',
+        },
+        {
+          name: 'Facebook',
+          icon: 'FacebookIcon',
+          url: 'https://www.facebook.com',
+        },
+        {
+          name: 'Twitter',
+          icon: 'TwitterIcon',
+          url: 'https://www.twitter.com',
+        },
+        {
+          name: 'Instagram',
+          icon: 'InstagramIcon',
+          url: 'https://www.instagram.com',
+        },
+      ],
     },
     posts: [
       {
@@ -262,8 +439,32 @@ export const USERS: User[] = [
     email: 'eduardo.ortega@example.com',
     userProfile: {
       gender: 'male',
+      jobTitle: '',
+      company: '',
       avatarUrl: '/assets/images/dummy/avatar8.png',
       dateOfBirth: new Date('1985-11-05'),
+      socials: [
+        {
+          name: 'Portfolio',
+          icon: 'ExploreIcon',
+          url: 'https://www.google.com',
+        },
+        {
+          name: 'Facebook',
+          icon: 'FacebookIcon',
+          url: 'https://www.facebook.com',
+        },
+        {
+          name: 'Twitter',
+          icon: 'TwitterIcon',
+          url: 'https://www.twitter.com',
+        },
+        {
+          name: 'Instagram',
+          icon: 'InstagramIcon',
+          url: 'https://www.instagram.com',
+        },
+      ],
     },
     posts: [
       {
@@ -281,8 +482,32 @@ export const USERS: User[] = [
     email: 'yasin.kawakamu@example.com',
     userProfile: {
       gender: 'male',
+      jobTitle: '',
+      company: '',
       avatarUrl: '/assets/images/dummy/avatar9.png',
       dateOfBirth: new Date('1988-08-20'),
+      socials: [
+        {
+          name: 'Portfolio',
+          icon: 'ExploreIcon',
+          url: 'https://www.google.com',
+        },
+        {
+          name: 'Facebook',
+          icon: 'FacebookIcon',
+          url: 'https://www.facebook.com',
+        },
+        {
+          name: 'Twitter',
+          icon: 'TwitterIcon',
+          url: 'https://www.twitter.com',
+        },
+        {
+          name: 'Instagram',
+          icon: 'InstagramIcon',
+          url: 'https://www.instagram.com',
+        },
+      ],
     },
     posts: [
       {
@@ -312,8 +537,32 @@ export const USERS: User[] = [
     email: 'edilson.carvalho@example.com',
     userProfile: {
       gender: 'male',
+      jobTitle: '',
+      company: '',
       avatarUrl: '/assets/images/dummy/avatar10.png',
       dateOfBirth: new Date('1993-12-03'),
+      socials: [
+        {
+          name: 'Portfolio',
+          icon: 'ExploreIcon',
+          url: 'https://www.google.com',
+        },
+        {
+          name: 'Facebook',
+          icon: 'FacebookIcon',
+          url: 'https://www.facebook.com',
+        },
+        {
+          name: 'Twitter',
+          icon: 'TwitterIcon',
+          url: 'https://www.twitter.com',
+        },
+        {
+          name: 'Instagram',
+          icon: 'InstagramIcon',
+          url: 'https://www.instagram.com',
+        },
+      ],
     },
     posts: [
       {
@@ -331,8 +580,32 @@ export const USERS: User[] = [
     email: 'albini.glauki@example.com',
     userProfile: {
       gender: 'male',
+      jobTitle: '',
+      company: '',
       avatarUrl: '/assets/images/dummy/avatar11.png',
       dateOfBirth: new Date('1989-04-01'),
+      socials: [
+        {
+          name: 'Portfolio',
+          icon: 'ExploreIcon',
+          url: 'https://www.google.com',
+        },
+        {
+          name: 'Facebook',
+          icon: 'FacebookIcon',
+          url: 'https://www.facebook.com',
+        },
+        {
+          name: 'Twitter',
+          icon: 'TwitterIcon',
+          url: 'https://www.twitter.com',
+        },
+        {
+          name: 'Instagram',
+          icon: 'InstagramIcon',
+          url: 'https://www.instagram.com',
+        },
+      ],
     },
     posts: [],
     lastSeen: 'online',
@@ -343,8 +616,32 @@ export const USERS: User[] = [
     email: 'muhamet.murteza@example.com',
     userProfile: {
       gender: 'male',
+      jobTitle: '',
+      company: '',
       avatarUrl: '',
       dateOfBirth: new Date('1992-10-22'),
+      socials: [
+        {
+          name: 'Portfolio',
+          icon: 'ExploreIcon',
+          url: 'https://www.google.com',
+        },
+        {
+          name: 'Facebook',
+          icon: 'FacebookIcon',
+          url: 'https://www.facebook.com',
+        },
+        {
+          name: 'Twitter',
+          icon: 'TwitterIcon',
+          url: 'https://www.twitter.com',
+        },
+        {
+          name: 'Instagram',
+          icon: 'InstagramIcon',
+          url: 'https://www.instagram.com',
+        },
+      ],
     },
     posts: [],
     lastSeen: new Date(new Date().setHours(new Date().getHours() - 2)), // 2 hours ago
@@ -355,8 +652,32 @@ export const USERS: User[] = [
     email: 'jose.antonio@example.com',
     userProfile: {
       gender: 'male',
+      jobTitle: '',
+      company: '',
       avatarUrl: '',
       dateOfBirth: new Date('1984-06-18'),
+      socials: [
+        {
+          name: 'Portfolio',
+          icon: 'ExploreIcon',
+          url: 'https://www.google.com',
+        },
+        {
+          name: 'Facebook',
+          icon: 'FacebookIcon',
+          url: 'https://www.facebook.com',
+        },
+        {
+          name: 'Twitter',
+          icon: 'TwitterIcon',
+          url: 'https://www.twitter.com',
+        },
+        {
+          name: 'Instagram',
+          icon: 'InstagramIcon',
+          url: 'https://www.instagram.com',
+        },
+      ],
     },
     posts: [],
     lastSeen: new Date(new Date().setHours(new Date().getHours() - 2)), // 2 hours ago
@@ -367,8 +688,32 @@ export const USERS: User[] = [
     email: 'kujtim.rushiti@example.com',
     userProfile: {
       gender: 'male',
+      jobTitle: '',
+      company: '',
       avatarUrl: '',
       dateOfBirth: new Date('1995-03-15'),
+      socials: [
+        {
+          name: 'Portfolio',
+          icon: 'ExploreIcon',
+          url: 'https://www.google.com',
+        },
+        {
+          name: 'Facebook',
+          icon: 'FacebookIcon',
+          url: 'https://www.facebook.com',
+        },
+        {
+          name: 'Twitter',
+          icon: 'TwitterIcon',
+          url: 'https://www.twitter.com',
+        },
+        {
+          name: 'Instagram',
+          icon: 'InstagramIcon',
+          url: 'https://www.instagram.com',
+        },
+      ],
     },
     posts: [],
     lastSeen: 'online',
@@ -379,8 +724,32 @@ export const USERS: User[] = [
     email: 'ostoja.ostojic@example.com',
     userProfile: {
       gender: 'male',
+      jobTitle: '',
+      company: '',
       avatarUrl: '',
       dateOfBirth: new Date('1987-08-02'),
+      socials: [
+        {
+          name: 'Portfolio',
+          icon: 'ExploreIcon',
+          url: 'https://www.google.com',
+        },
+        {
+          name: 'Facebook',
+          icon: 'FacebookIcon',
+          url: 'https://www.facebook.com',
+        },
+        {
+          name: 'Twitter',
+          icon: 'TwitterIcon',
+          url: 'https://www.twitter.com',
+        },
+        {
+          name: 'Instagram',
+          icon: 'InstagramIcon',
+          url: 'https://www.instagram.com',
+        },
+      ],
     },
     posts: [],
     lastSeen: 'online',
@@ -391,8 +760,32 @@ export const USERS: User[] = [
     email: 'xhevdet.cazimi@example.com',
     userProfile: {
       gender: 'male',
+      jobTitle: '',
+      company: '',
       avatarUrl: '',
       dateOfBirth: new Date('1991-01-09'),
+      socials: [
+        {
+          name: 'Portfolio',
+          icon: 'ExploreIcon',
+          url: 'https://www.google.com',
+        },
+        {
+          name: 'Facebook',
+          icon: 'FacebookIcon',
+          url: 'https://www.facebook.com',
+        },
+        {
+          name: 'Twitter',
+          icon: 'TwitterIcon',
+          url: 'https://www.twitter.com',
+        },
+        {
+          name: 'Instagram',
+          icon: 'InstagramIcon',
+          url: 'https://www.instagram.com',
+        },
+      ],
     },
     posts: [],
     lastSeen: 'online',
@@ -403,8 +796,32 @@ export const USERS: User[] = [
     email: 'test@foy.com',
     userProfile: {
       gender: 'male',
+      jobTitle: '',
+      company: '',
       avatarUrl: '',
       dateOfBirth: new Date('1995-09-10'),
+      socials: [
+        {
+          name: 'Portfolio',
+          icon: 'ExploreIcon',
+          url: 'https://www.google.com',
+        },
+        {
+          name: 'Facebook',
+          icon: 'FacebookIcon',
+          url: 'https://www.facebook.com',
+        },
+        {
+          name: 'Twitter',
+          icon: 'TwitterIcon',
+          url: 'https://www.twitter.com',
+        },
+        {
+          name: 'Instagram',
+          icon: 'InstagramIcon',
+          url: 'https://www.instagram.com',
+        },
+      ],
     },
     posts: [
       {

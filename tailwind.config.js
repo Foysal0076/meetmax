@@ -87,7 +87,7 @@ module.exports = {
             fontWeight: 400,
           },
         ],
-        'body-3': [
+        'body-4': [
           '.625rem',
           {
             lineHeight: '1rem',
