@@ -4,7 +4,7 @@ import Avatar from '@/components/Common/Avatar'
 type Props = {
   authorId: number
   fullname: string
-  avatarUrl: string
+  avatarUrl?: string
   onClick: (id: number) => void
 }
 

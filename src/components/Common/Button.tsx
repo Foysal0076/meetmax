@@ -11,20 +11,20 @@ type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 }
 
 const ButtonVariants = cva(
-  'rounded-lg text-white focus:ring-4 disabled:active:transform-none active:scale-[.9] disabled:cursor-not-allowed transition-all duration-300 text-nowrap focus:outline-none font-medium',
+  'rounded-lg text-white focus:ring-4 disabled:active:transform-none active:scale-[.9] disabled:cursor-not-allowed transition-all duration-300 text-nowrap outline-none focus:outline-none font-medium',
   {
     variants: {
       color: {
         primary:
-          'bg-primary-500 disabled:text-primary-200 disabled:bg-primary-50 hover:bg-primary-600 focus:ring-primary-100 focus:outline-primary-200 ',
+          'bg-primary-500 disabled:text-primary-200 disabled:bg-primary-50 hover:bg-primary-600 focus:ring-primary-200 ',
         secondary:
-          'bg-secondary-500 hover:bg-secondary-600 focus:ring-secondary-100 focus:outline-secondary-200 disabled:text-secondary-200 disabled:bg-secondary-50',
+          'bg-secondary-500 hover:bg-secondary-600 focus:ring-secondary-200 disabled:text-secondary-200 disabled:bg-secondary-50',
         warning:
-          'bg-warning-500 hover:bg-warning-600 focus:ring-warning-100 focus:outline-warning-200 disabled:text-warning-200 disabled:bg-warning-50',
+          'bg-warning-500 hover:bg-warning-600 focus:ring-warning-200 disabled:text-warning-200 disabled:bg-warning-50',
         danger:
-          'bg-danger-500 hover:bg-danger-600 focus:ring-danger-100 focus:outline-danger-200 disabled:text-danger-200 disabled:bg-danger-50',
+          'bg-danger-500 hover:bg-danger-600 focus:ring-danger-200 disabled:text-danger-200 disabled:bg-danger-50',
         green:
-          'bg-green-500 hover:bg-green-600 focus:ring-green-100 focus:outline-green-200 disabled:text-green-200 disabled:bg-green-50',
+          'bg-green-500 hover:bg-green-600 focus:ring-green-200 disabled:text-green-200 disabled:bg-green-50',
       },
       size: {
         xs: 'h-[1.75rem] text-xs px-4',

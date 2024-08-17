@@ -11,7 +11,7 @@ const YouMightLikeProfile = () => {
     <div className='rounded-2xl bg-neutral-0 shadow-default'>
       <div className='flex justify-between border-b px-[1.125rem] py-2.5'>
         <span className='text-display font-bold'>You Might Like</span>
-        <button className='text-primary-500 transition-colors duration-200 hover:text-primary-600'>
+        <button className='text-body-2 text-primary-500 transition-colors duration-200 hover:text-primary-600'>
           See All
         </button>
       </div>

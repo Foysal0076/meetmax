@@ -26,7 +26,7 @@ const ButtonVariants = cva(
         green:
           'hover:bg-green-50  border-green-500/80 text-green-500  focus:ring-green-100 dark:text-green-200 dark:border-green-200 disabled:text-green-200 disabled:border-green-100 disabled:hover:bg-transparent dark:disabled:bg-green-50/20 dark:disabled:border-green-50/10 dark:disabled:text-green-100/60',
         neutral:
-          'hover:bg-neutral-10 border-neutral-100/20 text-neutral-100/60 focus:ring-neutral-100/10 dark:text-neutral-200 dark:border-neutral-200 disabled:text-neutral-200 disabled:border-neutral-100 disabled:hover:bg-transparent dark:disabled:bg-neutral-50/20 dark:disabled:border-neutral-50/10 dark:disabled:text-neutral-100/60',
+          'hover:bg-neutral-10 border-neutral-100/20 text-neutral-100/60 focus:ring-neutral-10 dark:text-neutral-200 dark:border-neutral-200 disabled:text-neutral-200 disabled:border-neutral-100 disabled:hover:bg-transparent dark:disabled:bg-neutral-50/20 dark:disabled:border-neutral-50/10 dark:disabled:text-neutral-100/60',
       },
       size: {
         xs: 'h-[1.75rem] text-xs px-4',

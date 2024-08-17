@@ -2,7 +2,7 @@ export type User = {
   id: number
   fullname: string
   email: string
-  userProfile: UserProfile | null
+  userProfile: UserProfile
   posts: Post[]
   lastSeen: Date | 'online' | null
 }
@@ -69,7 +69,7 @@ export const USERS: User[] = [
       jobTitle: 'Ui/UX Designer',
       company: 'Technovation',
       avatarUrl: '/assets/images/dummy/avatar1.png',
-      dateOfBirth: new Date('1990-05-15'),
+      dateOfBirth: new Date('1990-08-25'),
       socials: [
         {
           name: 'Portfolio',
@@ -124,7 +124,7 @@ export const USERS: User[] = [
       jobTitle: 'Founder and CEO',
       company: 'Meetmax',
       avatarUrl: '/assets/images/dummy/avatar2.png',
-      dateOfBirth: new Date('1985-06-10'),
+      dateOfBirth: new Date('1985-09-10'),
       socials: [
         {
           name: 'Portfolio',
@@ -191,7 +191,7 @@ export const USERS: User[] = [
       jobTitle: '',
       company: '',
       avatarUrl: '/assets/images/dummy/avatar3.png',
-      dateOfBirth: new Date('1987-04-22'),
+      dateOfBirth: new Date('1987-08-28'),
       socials: [
         {
           name: 'Portfolio',
@@ -246,7 +246,7 @@ export const USERS: User[] = [
       jobTitle: '',
       company: '',
       avatarUrl: '/assets/images/dummy/avatar4.png',
-      dateOfBirth: new Date('1983-02-14'),
+      dateOfBirth: new Date('2003-09-2'),
       socials: [
         {
           name: 'Portfolio',
@@ -880,14 +880,28 @@ export const EVENTS: Event[] = [
   },
 ]
 
+export type BirthDay = {
+  id: number
+  fullname: string
+  avatarUrl?: string
+  dateOfBirth: Date
+}
+
+// sort users on upcoming birthday order
+export const BIRTHDAYS: BirthDay[] = USERS.map((user) => ({
+  id: user.id,
+  fullname: user.fullname,
+  avatarUrl: user.userProfile.avatarUrl,
+  dateOfBirth: user.userProfile.dateOfBirth,
+})).sort(
+  (a, b) =>
+    new Date(a.dateOfBirth).getTime() - new Date(b.dateOfBirth).getTime()
+)
+
 export type Story = {
   id: number
   content: string
-  author: {
-    id: number
-    fullname: string
-    avatarUrl: string
-  }
+  author: ShortUserInfo
   date: Date
 }
 

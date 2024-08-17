@@ -8,6 +8,7 @@ type Props = {
 }
 
 const EventCard = ({ event }: Props) => {
+  const showParticipants = event.participants.length > 0
   return (
     <div className='rounded-large bg-neutral-3 px-3.5 pb-3.5 lg:px-2.5 lg:pb-2.5'>
       <div className='flex gap-5'>
@@ -27,13 +28,17 @@ const EventCard = ({ event }: Props) => {
           </span>
         </div>
       </div>
-      <hr className='my-2.5' />
-      <div className='flex items-center justify-between gap-5'>
-        <span className='text-body-3 font-medium'>
-          {event.seenBy.length} seen
-        </span>
-        <GroupAvatar avatars={event.participants} size='sm' />
-      </div>
+      {showParticipants && (
+        <>
+          <hr className='my-2.5' />
+          <div className='flex items-center justify-between gap-5'>
+            <span className='text-body-3 font-medium'>
+              {event.seenBy.length} seen
+            </span>
+            <GroupAvatar avatars={event.participants} size='sm' />
+          </div>
+        </>
+      )}
     </div>
   )
 }

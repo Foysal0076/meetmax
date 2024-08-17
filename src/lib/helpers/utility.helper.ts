@@ -22,7 +22,7 @@ export const createInitials = (name: string = '', length: 1 | 2 = 2) => {
 }
 
 export const pluralize = (value: number, word: string) => {
-  return `${value} ${word}${value !== 1 ? 's' : ''}`
+  return `${word}${value !== 1 ? 's' : ''}`
 }
 
 export const getLastSeenTime = (date: Date) => {
@@ -69,4 +69,13 @@ export const getAsciiAverage = (str: string) => {
     .map((char) => char.charCodeAt(0))
     .reduce((acc, cur) => acc + cur, 0)
   return Math.floor(sum / str.length)
+}
+
+export const isSameDate = (date1: Date | string, date2: Date | string) => {
+  const _date1 = new Date(date1)
+  const _date2 = date2 ? new Date(date2) : new Date()
+  return (
+    _date1.getDate() === _date2.getDate() &&
+    _date1.getMonth() === _date2.getMonth()
+  )
 }
