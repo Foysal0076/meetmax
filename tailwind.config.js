@@ -199,6 +199,10 @@ module.exports = {
       },
       borderRadius: {
         large: '.625rem'
+      },
+      spacing: {
+        '4.5': '1.125rem',
+        '7.5': '1.875rem'
       }
     },
   },

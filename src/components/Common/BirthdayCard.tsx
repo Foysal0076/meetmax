@@ -18,7 +18,7 @@ const BirthdayCard = ({
   dateOfBirth,
 }: Props) => {
   return (
-    <div className='pb-3.5 lg:pb-[1.125rem]'>
+    <div className='pb-3.5 lg:pb-4.5'>
       <div className='mb-3.5 flex items-center gap-5 lg:mb-2.5'>
         <Avatar
           className='h-10 w-10 rounded-md'

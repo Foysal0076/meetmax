@@ -5,7 +5,7 @@ import { SearchIcon } from '@/components/Common/Icons'
 type Props = React.HTMLAttributes<HTMLInputElement> & {}
 
 const SearchInput = ({ className, ...props }: Props) => {
-  className = `block w-full rounded-large border border-neutral-40 bg-neutral-0 p-2.5 ps-10 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 text-body-1 text-neutral-100 placeholder:text-neutral-80 ${className}`
+  className = `block w-full rounded-large border-none ring-1 ring-neutral-40 bg-neutral-0 p-2.5 ps-10 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 text-body-1 text-neutral-100 placeholder:text-neutral-80 ${className}`
   return (
     <div className='w-full'>
       <label htmlFor='search-input' className='sr-only'>

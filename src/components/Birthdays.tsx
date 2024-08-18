@@ -11,14 +11,14 @@ const Birthdays = () => {
       : 'No upcoming birthdays'
 
   return (
-    <div className='rounded-2xl bg-neutral-0 pb-3.5 shadow-default lg:pb-[1.125rem]'>
-      <div className='flex justify-between border-b px-[1.125rem] py-2.5'>
+    <div className='rounded-2xl bg-neutral-0 pb-3.5 shadow-default lg:pb-4.5'>
+      <div className='flex justify-between border-b px-4.5 py-2.5'>
         <span className='text-display font-bold'>Birthdays</span>
         <button className='text-body-2 text-primary-500 transition-colors duration-200 hover:text-primary-600'>
           See All
         </button>
       </div>
-      <div className='px-5 pt-3.5 lg:px-[1.125rem] lg:pt-5'>
+      <div className='px-5 pt-3.5 lg:px-4.5 lg:pt-5'>
         <BirthdayCard
           id={1}
           fullname={'Edilson De Carvalho'}
