@@ -1,4 +1,4 @@
-import { getLastSeenTime } from '@/lib/helpers'
+import { getTimePassed } from '@/lib/helpers'
 
 type Props = {
   lastSeen: Date | 'online' | null
@@ -15,7 +15,7 @@ const LastSeen = ({ lastSeen }: Props) => {
 
   return (
     <span className='text-body-3 font-medium'>
-      {getLastSeenTime(lasSeenTime)}
+      {getTimePassed(lasSeenTime)}
     </span>
   )
 }

@@ -25,9 +25,9 @@ export const pluralize = (value: number, word: string) => {
   return `${word}${value !== 1 ? 's' : ''}`
 }
 
-export const getLastSeenTime = (date: Date) => {
+export const getTimePassed = (date: Date | string) => {
   const currentDate = new Date()
-  const diff = currentDate.getTime() - date.getTime()
+  const diff = currentDate.getTime() - new Date(date).getTime()
 
   const seconds = Math.floor(diff / 1000)
   if (seconds < 60) {

@@ -5,7 +5,7 @@ const LiveVideo = () => {
     <div className='flex items-center gap-2 md:gap-2.5'>
       <VideoCameraIcon width={16} />
       <span className='text-body-1 font-medium'>
-        Live <span className='hidden sm:inline'>Video</span>
+        Live <span className='hidden @md:inline'>Video</span>
       </span>
     </div>
   )

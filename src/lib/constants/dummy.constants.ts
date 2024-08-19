@@ -27,6 +27,8 @@ export type Post = {
   content: string
   images: string[]
   comments: PostComment[]
+  publishedAt?: Date | string
+  privacy: 'Public' | 'Private' | 'Friends'
 }
 
 export type PostComment = {
@@ -96,8 +98,10 @@ export const USERS: User[] = [
     posts: [
       {
         id: 1,
+        publishedAt: new Date('2024-08-01'),
+        privacy: 'Public',
         content: 'Excited to start my new project!',
-        images: ['https://via.placeholder.com/300'],
+        images: ['/assets/images/dummy/postimage6.jpg'],
         comments: [
           {
             id: 1,
@@ -151,8 +155,14 @@ export const USERS: User[] = [
     posts: [
       {
         id: 2,
+        publishedAt: new Date('2024-08-01'),
+        privacy: 'Public',
         content: 'Had a productive meeting today!',
-        images: [],
+        images: [
+          '/assets/images/dummy/postimage1.jpeg',
+          '/assets/images/dummy/postimage2.jpeg',
+          '/assets/images/dummy/postimage3.jpeg',
+        ],
         comments: [
           {
             id: 2,
@@ -218,8 +228,10 @@ export const USERS: User[] = [
     posts: [
       {
         id: 3,
+        publishedAt: new Date('2024-08-01'),
+        privacy: 'Public',
         content: 'Looking forward to the weekend!',
-        images: ['https://via.placeholder.com/300'],
+        images: ['/assets/images/dummy/postimage4.jpeg'],
         comments: [
           {
             id: 4,
@@ -273,10 +285,12 @@ export const USERS: User[] = [
     posts: [
       {
         id: 4,
+        publishedAt: new Date('2023-10-01'),
+        privacy: 'Public',
         content: 'Amazing sunset today!',
         images: [
-          'https://via.placeholder.com/300',
-          'https://via.placeholder.com/400',
+          '/assets/images/dummy/postimage1.jpeg',
+          '/assets/images/dummy/postimage2.jpeg',
         ],
         comments: [],
       },
@@ -319,6 +333,8 @@ export const USERS: User[] = [
     posts: [
       {
         id: 5,
+        publishedAt: new Date('2023-10-01'),
+        privacy: 'Public',
         content: 'Just finished a great book!',
         images: [],
         comments: [
@@ -374,8 +390,13 @@ export const USERS: User[] = [
     posts: [
       {
         id: 6,
+        publishedAt: new Date('2023-10-01'),
+        privacy: 'Public',
         content: 'Can’t wait for the holidays!',
-        images: ['https://via.placeholder.com/300'],
+        images: [
+          '/assets/images/dummy/postimage1.jpeg',
+          '/assets/images/dummy/postimage2.jpeg',
+        ],
         comments: [],
       },
     ],
@@ -417,6 +438,8 @@ export const USERS: User[] = [
     posts: [
       {
         id: 7,
+        publishedAt: new Date('2023-10-01'),
+        privacy: 'Public',
         content: 'Learning a new programming language!',
         images: [],
         comments: [
@@ -472,8 +495,13 @@ export const USERS: User[] = [
     posts: [
       {
         id: 8,
+        publishedAt: new Date('2023-10-01'),
+        privacy: 'Public',
         content: 'Check out this cool photo I took!',
-        images: ['https://via.placeholder.com/300'],
+        images: [
+          '/assets/images/dummy/postimage1.jpeg',
+          '/assets/images/dummy/postimage2.jpeg',
+        ],
         comments: [],
       },
     ],
@@ -515,6 +543,8 @@ export const USERS: User[] = [
     posts: [
       {
         id: 9,
+        publishedAt: new Date('2023-10-01'),
+        privacy: 'Public',
         content: 'I’m feeling inspired today!',
         images: [],
         comments: [
@@ -570,6 +600,8 @@ export const USERS: User[] = [
     posts: [
       {
         id: 10,
+        publishedAt: new Date('2023-10-01'),
+        privacy: 'Public',
         content: 'Had a great workout today!',
         images: [],
         comments: [],
@@ -829,6 +861,8 @@ export const USERS: User[] = [
     posts: [
       {
         id: 17,
+        publishedAt: new Date('2023-10-01'),
+        privacy: 'Public',
         content:
           'If you think adventure is dangerous, try routine, it’s lethal Paulo Coelho! Good morning all friends.',
         comments: [],
@@ -1013,3 +1047,14 @@ export const STORIES: Story[] = [
     date: new Date('2023-10-10'),
   },
 ]
+
+export const POSTS: Post[] = USERS.map((user) => {
+  return user.posts.map((post) => ({
+    ...post,
+    userProfile: {
+      id: user.id,
+      fullname: user.fullname,
+      avatarUrl: user.userProfile.avatarUrl,
+    },
+  }))
+}).flat()

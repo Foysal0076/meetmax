@@ -6,6 +6,11 @@ import { USERS } from '@/lib/constants/dummy.constants'
 const YouMightLikeProfile = () => {
   const user = USERS[1]
   if (!user?.userProfile) return null
+  const description = user.userProfile?.jobTitle
+    ? `${user.userProfile.jobTitle} at ${user.userProfile.company}`
+    : user.userProfile?.company
+      ? `Works at ${user.userProfile.company}`
+      : ''
 
   return (
     <div className='rounded-2xl bg-neutral-0 shadow-default'>
@@ -19,8 +24,7 @@ const YouMightLikeProfile = () => {
         <AvatarWithDetails
           fullname={user.fullname}
           id={user.id}
-          jobTitle={user.userProfile.jobTitle}
-          company={user.userProfile.company}
+          description={description}
           avatarUrl={user.userProfile?.avatarUrl}
           socials={user.userProfile?.socials}
         />

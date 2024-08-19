@@ -25,12 +25,12 @@ const WritePost = () => {
         <Input placeholder="What's happening" className='' />
       </div>
       <div className='flex items-center justify-between'>
-        <div className='flex items-center gap-6 md:gap-7.5'>
+        <div className='flex items-center gap-6 @md:gap-7.5'>
           <LiveVideo />
           <UploadMedia />
           <AddFeeling />
         </div>
-        <Button>Post</Button>
+        <Button className='!h-7.5 @md:!h-10'>Post</Button>
       </div>
     </div>
   )
