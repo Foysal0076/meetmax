@@ -2,7 +2,11 @@ import clsx from 'clsx'
 import Image from 'next/image'
 
 import AvatarWithDetails from '@/components/Common/AvatarWithDetails'
+import PostActions from '@/components/Post/PostActions'
+import PostInteracts from '@/components/Post/PostInteracts'
+import WriteComment from '@/components/Post/WriteComment'
 import {
+  LIKES,
   Post as PostType,
   ShortUserInfo,
 } from '@/lib/constants/dummy.constants'
@@ -59,6 +63,17 @@ const Post = ({ post }: Props) => {
           </div>
         </div>
       )}
+      <div className='my-3 md:my-4.5'>
+        <PostInteracts
+          likes={LIKES}
+          comments={post.comments.length}
+          shares={17}
+        />
+      </div>
+      <PostActions />
+      <div className='my-3 md:my-3.5'>
+        <WriteComment />
+      </div>
     </div>
   )
 }

@@ -1058,3 +1058,9 @@ export const POSTS: Post[] = USERS.map((user) => {
     },
   }))
 }).flat()
+
+export const LIKES: ShortUserInfo[] = USERS.slice(0, 14).map((user) => ({
+  id: user.id,
+  fullname: user.fullname,
+  avatarUrl: user.userProfile.avatarUrl,
+}))
