@@ -22,7 +22,7 @@ const PostComments = ({ comments }: Props) => {
     () => totalComments - showCommentCount,
     [totalComments, showCommentCount]
   )
-
+  console.log({ totalComments, remainingComments })
   return (
     <div>
       <div className='flex w-full flex-col gap-2 max-md:px-5 md:gap-4.5'>
@@ -39,8 +39,10 @@ const PostComments = ({ comments }: Props) => {
           </div>
         ))}
       </div>
-      {remainingComments > showCommentCount && (
-        <button className='mt-1 select-none text-neutral-100/60 hover:text-neutral-100 md:mt-4.5'>
+      {remainingComments > 0 && (
+        <button
+          onClick={handleShowMoreComments}
+          className='mt-1 select-none text-neutral-100/60 hover:text-neutral-100 md:mt-4.5'>
           {`View ${remainingComments} more ${pluralize(remainingComments, 'comment')}`}
         </button>
       )}
