@@ -106,11 +106,36 @@ export const USERS: User[] = [
           {
             id: 1,
             content: 'Good luck with your project!',
-            date: new Date(),
+            date: new Date(new Date().setHours(new Date().getHours() - 4)), // 4 hours ago
             author: {
               id: 2,
               fullname: 'Jess Phillips MP',
               avatarUrl: '/assets/images/dummy/avatar2.png',
+            },
+            replies: [
+              {
+                id: 2,
+                content: 'Thanks!',
+                date: new Date(
+                  new Date().setMinutes(new Date().getMinutes() - 2)
+                ), // 2 minutes ago
+                author: {
+                  id: 1,
+                  fullname: 'Kayleigh Bysouth',
+                  avatarUrl: '/assets/images/dummy/avatar1.png',
+                },
+                replies: [],
+              },
+            ],
+          },
+          {
+            id: 3,
+            content: 'Good luck with your project!',
+            date: new Date(new Date().setHours(new Date().getHours() - 4)), // 4 hours ago
+            author: {
+              id: 3,
+              fullname: 'MP Eslam Hisham',
+              avatarUrl: '/assets/images/dummy/avatar3.png',
             },
             replies: [],
           },
